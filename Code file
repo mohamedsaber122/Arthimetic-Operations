@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String args[]) {
+        Scanner scanner = new Scanner(System.in);
+System.out.println("Enter first number :");
+      int num1 = scanner.nextInt();
+  System.out.println("Enter second number :");
+        int num2 = scanner.nextInt();
+     System.out.println("choose one of the following actions");
+	  System.out.println("1-Sum    2- Subtraction    3-Multiplication    4-Division");
+	  int x = scanner.nextInt();	
+	  if (x == 1){
+      int sum = num1 + num2 ; 
+		  System.out.println("Sum: " + sum  );
+	  }
+	  if (x == 2){
+      int sub = num1 - num2 ;
+		  System.out.println("Subtraction: " + sub );
+	  }
+
+	  if (x == 3){
+		  int mult = num1 * num2 ;
+		  System.out.println("Multiplication: " + mult);
+	  }
+	  if (x == 4){
+  try {
+int div = num1 / num2 ;
+		  System.out.println("division: " + div );
+  }
+  catch(ArithmeticException e){
+         System.out.println ("You Shouldn't divide a number by zero");
+	  }
+		  
+		  
+  } 
+}
+}
